@@ -70,6 +70,7 @@ ocelot.github.io/
 │   └── INTEGRATION.md    # Bot integration guide
 ├── public/               # Static assets
 └── next.config.ts        # Next.js configuration
+```
 
 ## 🔗 Integration with AdventureLandBots
 

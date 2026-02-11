@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">High Performance</h3>
             <p className="text-gray-400">
-              Built with Next.js 15, React 19, and optimized for speed and responsiveness
+              Built with Next.js 16, React 19, and optimized for speed and responsiveness
             </p>
           </div>
 
