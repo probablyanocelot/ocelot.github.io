@@ -1,21 +1,18 @@
 'use client'
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false);
   const [activeBots, setActiveBots] = useState(0);
 
   useEffect(() => {
-    setMounted(true);
     // Simulate bot count animation
     const interval = setInterval(() => {
       setActiveBots(prev => Math.min(prev + 1, 3));
     }, 500);
     return () => clearInterval(interval);
   }, []);
-
-  if (!mounted) return null;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -25,9 +22,17 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-400">
             AdventureLand Bot Monitor
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
             High-performance UI for monitoring and interacting with your AdventureLand MMORPG bots
           </p>
+          <Link 
+            href="/dashboard"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold px-8 py-3 rounded-lg hover:from-cyan-600 hover:to-purple-600 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-cyan-500/50"
+          >
+            <span>🎮</span>
+            Open Dashboard
+            <span>→</span>
+          </Link>
         </header>
 
         {/* Stats Dashboard */}
