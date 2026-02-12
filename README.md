@@ -1,4 +1,4 @@
-# ocelot.github.io
+# template-react-nextjs
 
 ![AdventureLand Bot Monitor](https://github.com/user-attachments/assets/fc427c1d-9e56-4d04-bda2-92c330139167)
 
@@ -6,7 +6,7 @@ A high-performance Next.js application for monitoring and interacting with Adven
 
 ## 🎮 Project Overview
 
-This project provides UI features to monitor and interact with bots from [github.com/probablyanocelot/AdventureLandBots](https://github.com/probablyanocelot/AdventureLandBots). May expand as an overall portfolio project.
+This project serves as a big-picture idea for a future project that provides UI features to monitor and interact with bots from [github.com/probablyanocelot/AdventureLandBots](https://github.com/probablyanocelot/AdventureLandBots). May expand as an overall portfolio project.
 
 ## ✨ Features
 
@@ -36,8 +36,8 @@ This project provides UI features to monitor and interact with bots from [github
 
 ```bash
 # Clone the repository
-git clone https://github.com/probablyanocelot/ocelot.github.io.git
-cd ocelot.github.io
+git clone https://github.com/probablyanocelot/template-react-nextjs.git
+cd template-react-nextjs
 
 # Install dependencies
 npm install
@@ -58,7 +58,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the application.
 ## 📁 Project Structure
 
 ```
-ocelot.github.io/
+template-react-nextjs/
 ├── app/                    # Next.js App Router pages
 │   ├── dashboard/         # Bot monitoring dashboard
 │   ├── layout.tsx         # Root layout with metadata
@@ -91,7 +91,7 @@ This project is configured to automatically deploy to GitHub Pages:
 
 1. Push changes to the `main` branch
 2. GitHub Actions will build and deploy automatically
-3. Access your site at `https://probablyanocelot.github.io`
+3. Access your site at `https://probablyanocelot.github.io/template-react-nextjs`
 
 ### Manual Deployment
 
